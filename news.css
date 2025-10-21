@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #f9fafb;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 0 0 40%;
+}
+
+.hero-image {
+  flex: 0 0 55%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOOK SECTION */
+.book {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.book h3 {
+  font-size: 28px;
+  color: #111;
+}
+
+.book span {
+  color: #0077cc;
+}
+
+/* CARD SECTION */
+.card {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-image {
+  flex: 0 0 55%;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card-text {
+  flex: 0 0 40%;
+  background: #fff1f2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* DRUM SECTION */
+.drum {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.drum-text {
+  flex: 0 0 40%;
+  background: #f0f9ff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.drum-image {
+  flex: 0 0 55%;
+}
+
+.drum-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* SNARE SECTION */
+.snare {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.snare-image {
+  flex: 0 0 55%;
+}
+
+.snare-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.snare-text {
+  flex: 0 0 40%;
+  background: #fefce8;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* BOX SECTION */
+.box {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.box h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* STICK (LOGOS) */
+.stick {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stick img {
+  height: 60px;
+}

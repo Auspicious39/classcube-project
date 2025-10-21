@@ -1,0 +1,260 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ✅ NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+}
+
+/* ✅ HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #f2f7ff;
+}
+
+.hero-text {
+  width: 40%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #0052cc;
+}
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.hero-image {
+  width: 55%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #0073e6;
+  color: #0073e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ EDUCATION */
+.book {
+  text-align: center;
+  padding: 60px;
+}
+
+.book h2 {
+  font-size: 2rem;
+  color: #0052cc;
+}
+
+.book span {
+  color: #0073e6;
+}
+
+/* ✅ FEATURES */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card img {
+  width: 55%;
+  border-radius: 8px;
+}
+
+.card .text {
+  width: 40%;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exams { color: #e74c3c; }
+.classes { color: #f39c12; }
+.payments { color: #3498db; }
+
+/* ✅ PARTNERS */
+.partners {
+  text-align: center;
+  padding: 60px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.logos img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ✅ CTA */
+.cta {
+  background: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* ✅ FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background: #f8f8f8;
+}
+
+.footer-col {
+  width: 23%;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
+  background: #eaeaea;
+  font-size: 0.8rem;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    transition: left 0.3s ease;
+    padding: 20px 0;
+  }
+
+  .nav ul.show {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image, .feature .text, .feature img {
+    width: 100%;
+  }
+
+  .features .feature {
+    flex-direction: column;
+  }
+}
